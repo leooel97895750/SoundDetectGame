@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <title>My Music Project</title>
+  <link rel="icon" href="images/musicicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mycss.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+</head>
+<body>
+
+  <!--一開始的設定-->
+  <canvas class="frequency-bars" style="display:none"></canvas>
+  <div class="meter" style="display:none">
+    <div class="meter-dot" style="display:none"></div>
+    <div class="meter-pointer" style="display:none"></div>
+  </div>
+  <div class="notes" style="display:none">
+    <div class="notes-list" style="display:none"></div>
+    <div class="frequency" style="display:none"> <span>Hz</span></div>
+  </div>
+  <script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+  <script src="aubio.js"></script>
+  <script src="tuner.js"></script>
+  <script src="meter.js"></script>
+  <script src="frequency-bars.js"></script>
+  <script src="notes.js"></script>
+  <script src="app.js"></script>
+  <script src="game.js"></script>
+
+  <!--頁面-->
+  <h1 id="mytitle"><img src="images/musicicon_w.png" style="width:30px;height:30px;"> My Music Project</h1>
+  <div id="notebox">
+    <h1 id="printnote"></h1>
+  </div>
+  <div id="note"></div>
+  <ul id="playlist">
+    <li onclick="stage(stage1_list,1,'b2',15)">Canon</li>
+    <li onclick="stage(stage2_list,2,'b1',20)">天空之城</li>
+    <li onclick="stage(stage3_list,3,'b3',20)">Always With Me</li>
+    <li>曲目4</li>
+    <li>曲目5</li>
+    <li>曲目6</li>
+    <li>曲目7</li>
+    <li>曲目8</li>
+    <li>曲目9</li>
+    <li>曲目10</li>
+    <li>曲目11</li>
+  </ul>
+
+  <div id="game">
+    <p id="starttext">Press Stage To Start !</p>
+    <img src="images/left.png" style="height:400px;position: absolute;left:-10px;z-index: 5;">
+    <img src="images/right.png" style="height:400px;position: absolute;right:-10px;z-index: 5;">
+    <div id="stage" style="position: relative; width:800px;height:400px;overflow: hidden;"></div>
+    <div id="roler" style="position: relative; top:-400px; width:800px;height:400px;overflow: hidden;">
+      <img id="crab" src="images/crab.png" style="width:60px;height:60px;position: absolute;z-index: 4;">
+      
+    </div>
+    <div id="bg1"></div>
+    <div id="bg2"></div>
+    
+  </div>
+  
+  <ul id="score">
+    <li id="percent">完成度:0%</li>
+  </ul>
+  <div id="footer">
+    <div style="width:1px;height:130px;background-color: black;"></div>
+  </div>
+  
+  
+</body>
+</html>

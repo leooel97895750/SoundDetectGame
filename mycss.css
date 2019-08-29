@@ -1,0 +1,193 @@
+body
+{
+  background-color: black;
+}
+#mytitle
+{
+    position: absolute;
+    top:10px;
+    left:10px;
+    padding:0px;
+    margin:0px;
+    color:white;
+    font-family:Microsoft JhengHei;
+
+    background-color:black;
+    width:500px;
+    height:40px;
+}
+#notebox
+{
+    position: absolute;
+    top:60px;
+    left:10px;
+    font-family:Microsoft JhengHei;
+
+    background-color: white;
+    width:100px;
+    height:100px;
+}
+#printnote
+{
+    font-size:50px;
+    padding:0px;
+    margin:0px;
+    font-family:Microsoft JhengHei;
+    margin-left:5px;
+    margin-top:15px;
+}
+#note
+{
+    position: absolute;
+    top:60px;
+    left:120px;
+    color:white;
+    font-size: 80px;
+}
+#playlist
+{
+    position: absolute;
+    top:170px;
+    left:10px;
+    padding:0px;
+    margin:0px;
+    list-style-type: none;
+    overflow-y: scroll;
+    font-family:Microsoft JhengHei;
+
+    background-color: white;
+    width:250px;
+    height:290px;
+}
+#playlist li
+{
+    padding:10px;
+    background-color:black;
+    margin-top:5px;
+    margin-left:5px;
+    margin-right:5px;
+    color:white;
+    font-size:20px;
+}
+#playlist li:hover
+{
+    background-color:white;
+    color:black;
+}
+#game
+{
+    position: absolute;
+    top:60px;
+    left:270px;
+    padding:0px;
+    margin:0px;
+    overflow: hidden;
+
+    background-color: white;
+    width:800px;
+    height:400px;
+}
+#starttext
+{
+    display: block;
+    position: absolute;
+    z-index: 2;
+    font-size: 50px;
+    font-family:Microsoft JhengHei;
+    margin:0px;
+    width:800px;
+    text-align: center;
+    text-shadow:2px 2px 5px #ffffff;
+}
+#crab
+{
+    display: none;
+    top:0px;
+    left:0px;
+    vertical-align: bottom;
+}
+#juice
+{
+    display: none;
+}
+.stage_note
+{
+    position: absolute;
+    bottom:0px;
+    padding-top:10px;
+    margin:0px;
+    color:white;
+    text-align: center;
+    font-size: 25px;
+    font-family:Microsoft JhengHei;
+    z-index: 2;
+
+    background-color:black;
+    width:60px;
+    height:100px;
+}
+#bg1
+{
+    position: absolute;
+    width:800px;
+    height:400px;
+    top:0px;
+    left:0px;
+    background-image: url("images/b2.jpg");
+    background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    z-index: 0;
+}
+#bg2
+{
+    position: absolute;
+    width:800px;
+    height:400px;
+    top:0px;
+    left:800px;
+    background-image: url("images/b2.jpg");
+    background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    z-index: 0;
+}
+#score
+{
+    position: absolute;
+    top:60px;
+    left:1080px;
+    padding:0px;
+    margin:0px;
+    list-style-type: none;
+    font-family:Microsoft JhengHei;
+
+    background-color: black;
+    width:190px;
+    height:400px;
+}
+#score li
+{
+    font-size:30px;
+    color:white;
+}
+#footer
+{
+    position: absolute;
+    top:470px;
+    left:10px;
+    padding:0px;
+    margin:0px;
+    overflow: hidden;
+
+    background-color: black;
+    width:1260px;
+    height:130px;
+}
+#footer div 
+{
+    display: inline-block;
+    width: 4px;
+    background: #a00;
+    margin: 0px 0px 0px 1px;
+    vertical-align: bottom;
+    overflow: hidden;
+}
